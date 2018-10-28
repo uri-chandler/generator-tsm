@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "types": "types/indes.d.ts",
   "scripts": {
-    "prebuild": "npm run lint",
+    "prebuild": "npm run lint && rimraf dist/*",
     "build": "tsc",
     "lint": "tslint -c tslint.json {src,tests}/**/*.ts",
     "test": "mocha --opts mocha.opts",
