@@ -1,0 +1,51 @@
+{
+    "extends": [
+        "tslint:recommended"
+    ],
+
+    "defaultSeverity": "error",
+
+    "rules": {
+        "no-consecutive-blank-lines": false,
+        "only-arrow-functions": false,
+        "eofline": false,
+        "no-unused-expression": false,
+
+        "quotemark": [true, "single"],
+
+        "ordered-imports": [
+            true,
+            {
+                "grouped-imports": true,
+                "named-imports-order": "any"
+            }
+        ],
+
+        "linebreak-style": [true, "LF"],
+
+        "whitespace": [
+            true,
+            {
+                "check-decl": false
+            }
+        ],
+
+        "typedef-whitespace": [
+            true,
+            {
+                "call-signature": "onespace",
+                "index-signature": "onespace",
+                "parameter": "onespace",
+                "property-declaration": "onespace",
+                "variable-declaration": "nospace"
+              },
+              {
+                "call-signature": "nospace",
+                "index-signature": "nospace",
+                "parameter": "nospace",
+                "property-declaration": "nospace",
+                "variable-declaration": "onespace"
+              }
+        ]
+    }
+}
