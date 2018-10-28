@@ -13,7 +13,8 @@ module.exports = class extends Generator {
                 type: 'input',
                 name: 'moduleName',
                 message: 'What\'s the name of your module ?',
-                default: this.appname,
+                default: this.appname.replace(/\s/g, '-'),
+                validate: answer => answer.length !== 0 && /\s/.test(answer) === false,
                 prefix: '-'
             },
 
@@ -21,6 +22,8 @@ module.exports = class extends Generator {
                 type: 'input',
                 name: 'description',
                 message: 'Give a short description for your module: ',
+                default: "my awesome module",
+                validate: answer => answer.length !== 0,
                 prefix: '-'
             },
 
@@ -28,6 +31,7 @@ module.exports = class extends Generator {
                 type: 'input',
                 name: 'author',
                 message: 'What\'s your name ?',
+                validate: answer => answer.length !== 0,
                 prefix: '-'
             }
         ]);
@@ -63,15 +67,15 @@ module.exports = class extends Generator {
 
         // readme
         this.fs.copyTpl(
-            this.templatePath('_README'),
-            this.destinationPath('README'),
+            this.templatePath('_README.md'),
+            this.destinationPath('README.md'),
             this.answers
         );
 
         // mocha options
         this.fs.copy(
             this.templatePath('mocha.opts'),
-            this.destinationPath('mocah.opts')
+            this.destinationPath('mocha.opts')
         );
 
         // typescript configs
