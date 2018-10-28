@@ -46,6 +46,13 @@
                 "property-declaration": "nospace",
                 "variable-declaration": "onespace"
               }
+        ],
+
+        "trailing-comma": [
+            true,
+            {
+                "multiline": "never"
+            }
         ]
     }
 }
