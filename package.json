@@ -1,7 +1,7 @@
 {
 	"name": "@ujc/generator-tsm",
 	"description": "My Yeoman generator for TypeScript modules",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"author": "Uri Chandler",
 	"dependencies": {
 		"yeoman-generator": "^3.1.1",

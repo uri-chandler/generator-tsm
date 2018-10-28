@@ -8,6 +8,7 @@
             "type": "node",
             "request": "launch",
             "name": "Launch",
+            "preLaunchTask": "Build",
             "program": "${workspaceFolder}/dist/index.js"
         },
 
@@ -15,6 +16,7 @@
             "type": "node",
             "request": "launch",
             "name": "Tests",
+            "preLaunchTask": "Build",
             "program": "${workspaceFolder}/node_modules/mocha/bin/_mocha",
             "args": [
                 "--opts",
