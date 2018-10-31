@@ -12,8 +12,9 @@
         "no-unused-expression": false,
 
         "arrow-parens": [true, "ban-single-arg-parens"],
-
+        "curly": [true, "as-needed"],
         "quotemark": [true, "single"],
+
 
         "ordered-imports": [
             true,
