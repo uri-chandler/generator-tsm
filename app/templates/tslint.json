@@ -15,6 +15,7 @@
         "curly": [true, "as-needed"],
         "quotemark": [true, "single"],
 
+        "one-line": [true, "check-open-brace"],
 
         "ordered-imports": [
             true,
