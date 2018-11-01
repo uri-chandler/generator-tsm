@@ -14,7 +14,7 @@
         "arrow-parens": [true, "ban-single-arg-parens"],
         "curly": [true, "as-needed"],
         "quotemark": [true, "single"],
-
+        "interface-name": [false],
         "one-line": [true, "check-open-brace"],
 
         "ordered-imports": [
