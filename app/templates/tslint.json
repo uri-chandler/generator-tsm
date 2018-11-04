@@ -17,6 +17,7 @@
         "interface-name": [false],
         "member-access": [true, "no-public"],
         "one-line": [true, "check-open-brace"],
+        "object-literal-sort-keys": false,
 
         "ordered-imports": [
             true,
