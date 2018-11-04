@@ -43,14 +43,14 @@
                 "index-signature": "onespace",
                 "parameter": "onespace",
                 "property-declaration": "onespace",
-                "variable-declaration": "nospace"
+                "variable-declaration": "onespace"
               },
               {
                 "call-signature": "nospace",
                 "index-signature": "nospace",
                 "parameter": "nospace",
                 "property-declaration": "nospace",
-                "variable-declaration": "onespace"
+                "variable-declaration": "nospace"
               }
         ],
 
